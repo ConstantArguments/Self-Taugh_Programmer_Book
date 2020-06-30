@@ -32,7 +32,7 @@ class Scraper:
                 continue
             if "html" in url:
                 print("\n" + url)
-                f = open (filename + ".txt", "a")
+                f = open (filename + ".txt", "a") # could also use with open as f
                 f.write("\n" + url)
                 f.close
 
