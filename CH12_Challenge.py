@@ -48,9 +48,9 @@ class Triangle:
         return result
 
 triangle1 = Triangle(2, 4)
-triangel2 = Triangle(11, 5)
+triangle2 = Triangle(11, 5)
 print(triangle1.area())
-print(triangel2.area())
+print(triangle2.area())
 
 """4. Make a Hexagon class with a method called calculate_perimeter that calculates and
     returns its perimeter. Then create a Hexagon object, call calculate_perimeter on it, and

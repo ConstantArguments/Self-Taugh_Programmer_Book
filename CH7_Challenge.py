@@ -43,7 +43,7 @@ while True:
             break
         guess = int(guess)
         if guess in list:
-            print("You guesssed correctly!")
+            print("You guessed correctly!")
             print(list)
             break
         else:
@@ -67,5 +67,3 @@ for numbers1 in list1:
 print(list1)
 print(list2)
 print(list3)
-
-        

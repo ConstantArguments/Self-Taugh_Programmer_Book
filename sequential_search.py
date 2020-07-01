@@ -1,7 +1,7 @@
 def seq_search(items, n):
     """
     Returns True if item in list.
-    :param list: list containg items.
+    :param list: list containing items.
     :param n: item you are searching for.
     :return: True or False.
     """

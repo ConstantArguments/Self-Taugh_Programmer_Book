@@ -1,13 +1,13 @@
 def fizzbuzz():
     """
     Prints numbers 1 to 100.
-    If number divisible by 15; alternateivly prints "fizzbuz".
-    If number divisible by 3; alternateivly prints "fizz".
-    If number divisible bt 5; alternateivly prints "buzz"
+    If number divisible by 15; alternatively prints "fizzbuzz".
+    If number divisible by 3; alternatively prints "fizz".
+    If number divisible bt 5; alternatively prints "buzz"
     """
     print("\nThis is FIZZBUZZ!\n\nIf a number is divisible by \"3\", say \"fizz\".\n"
             "If the number is divisible by \"5\", say \"buzz\".\n"
-            "If the number is divisible by \"15\", say \"fizzbuz\".\n"
+            "If the number is divisible by \"15\", say \"fizzbuzz\".\n"
             "\nGO!\n")
     for i in range (1, 101):
         # print "fizz" for integers divisible by 3

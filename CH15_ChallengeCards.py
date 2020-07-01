@@ -3,7 +3,7 @@ A Game of "War". 2 Players.
 Each Player is dealt a card. The Player with the highest rank of Card wins the round.
 Cards are ranked by face number value, "Jack", "Queen", "King", and then "Ace" is highest.
 In the event of a tie the card suit value breaks the tie.
-Suits are ranked alphabeticly with "Spades" as the highest.
+Suits are ranked alphabetically with "Spades" as the highest.
 When all 52 cards are dealt, the Player with the most rounds won, wins "War".
 """
 
@@ -14,7 +14,9 @@ class Card:
     values = [None, None, "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"] # "None" in index 0 and 1 to align values to index.
     def __init__(self, v, s):
         """
-        suit + value are inits.
+        Value and Suit.
+        :param v: int.
+        :param s: int.
         """
         self.value = v
         self.suit = s
@@ -74,6 +76,7 @@ class Player:
         Creates Player.
         Tracks hands won.
         Tracks Card currently played.
+        :param name: str.
         """
         self.wins = 0
         self.card = None
@@ -83,7 +86,7 @@ class Game:
     def __init__(self):
         """
         Creates Players.
-        Creates deck tuppel.
+        Creates deck tuple.
         """
         name1 = input("Enter Player 1 Name: ")
         name2 = input("Enter Player 2 Name: ")
@@ -93,12 +96,18 @@ class Game:
     def wins(self, winner):
         """
         Prints who won round.
+        :param winner: str.
         """
         w = f"{winner} wins this round."
         print(w)
     def draw(self, p1n, p1c, p2n, p2c):
         """
         Prints Player Names and Cards they drew.
+        :param p1n: str.
+        :param p1c: Card Object.
+        :param p2n: str.
+        :param p1n: Card Object.
+
         """
         d = f"\n{p1n} drew {p1c}\n{p2n} drew {p2c}\n"
         print(d)
@@ -128,6 +137,8 @@ class Game:
     def winner(self, p1, p2):
         """
         Determines winner based on wins tracked in Player.
+        :param p1: str.
+        :param p2: str.
         """
         if p1.wins > p2.wins:
             return p1.name

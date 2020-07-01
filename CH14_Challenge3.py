@@ -16,6 +16,6 @@ widget2 = Widget("Bonk", 44)
 widget3 = Widget("Conk", 22)
 same_widget = widget1
 
-print(is_same(widget1, widget2)) #False (differnt Objects with same Properties)
+print(is_same(widget1, widget2)) #False (different Objects with same Properties)
 print(is_same(widget1, widget3)) #False
 print(is_same(same_widget, widget1)) #True
