@@ -6,8 +6,8 @@ favoriteMusicians = ["Phil Lynott",
                      "Curtis Mayfeild"]
 print(favoriteMusicians)
 
-"""2. Create a list of tuples, with each tuple containing the longitude and latitude
-       of somewhere you've lived or visited.
+"""2. Create a list of tuples, with each tuple containing the longitude
+    and latitude of somewhere you've lived or visited.
 """
 
 visited = []
@@ -36,9 +36,9 @@ def ask_me():
     Returns values from keys in 'me' dictionary.
     Input from user.
     """
-    
+
     sorry = "I'm sorry to hear that!"
-    
+
     height = input("Do you want to know my height? Y/N:").capitalize()
     if height != "":
         if height[0] == "Y":
@@ -63,7 +63,7 @@ def ask_me():
             print(sorry)
     else:
         print(sorry)
-    
+
 ask_me()
 
 """5. Create a dictionary mapping your favorite musicians to a list of your favorite

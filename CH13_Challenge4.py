@@ -1,5 +1,5 @@
-"""4. Create a class called Horse and a class called Rider. Use composition to model a horse
-    that has a rider.
+"""4. Create a class called Horse and a class called Rider. Use
+    composition to model a horse that has a rider.
 """
 
 class Person:
@@ -12,9 +12,14 @@ class Person:
 
 class Rider(Person):
     def __init__(self, name, height, weight, age, skill):
-        Person.__init__(self, name, height, weight, age) # inherits parent's properties
-        self.skill = skill # adds additional properties
-        print(f"{self} created!") # output will show 2 objects at same
+        """
+        Inherits parent's properties.
+        Adds additional properties.
+        """
+        Person.__init__(self, name, height, weight, age)
+        self.skill = skill
+        # Will print 2 duplicate lines because of inheritance of Person.
+        print(f"{self} created!")
 
 class Horse:
     def __init__(self, name, color, weight, age, rider):

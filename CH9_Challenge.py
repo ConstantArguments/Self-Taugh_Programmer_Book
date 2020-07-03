@@ -5,7 +5,8 @@ with open("quote.txt", "r") as f:
     print(f.read())
 
 
-"""2. Write a program that asks a user a question, and saves their answer to a file.
+"""2. Write a program that asks a user a question, and saves their
+    answer to a file.
 """
 
 def question():
@@ -20,8 +21,8 @@ question()
     [["Top Gun", "Risky Business", "Minority Report"],
      ["Titanic", "The Revenant", "Inception"],
      ["Training Day", "Man on Fire", "Flight"]]
-     and write them to a CSV file. The data from each list should be a row in
-     the file, with each item in the list separated by a comma.
+     and write them to a CSV file. The data from each list should be a
+     row in the file, with each item in the list separated by a comma.
 """
 import csv
 

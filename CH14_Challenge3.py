@@ -1,5 +1,5 @@
-"""3. Write a function that takes two objects as parameters and returns True if they are
-    the same object, and False if not.
+"""3. Write a function that takes two objects as parameters and returns
+    True if they are the same object, and False if not.
 """
 
 class Widget:
@@ -16,6 +16,6 @@ widget2 = Widget("Bonk", 44)
 widget3 = Widget("Conk", 22)
 same_widget = widget1
 
-print(is_same(widget1, widget2)) #False (different Objects with same Properties)
+print(is_same(widget1, widget2)) #False (2 Objects with same Properties)
 print(is_same(widget1, widget3)) #False
 print(is_same(same_widget, widget1)) #True

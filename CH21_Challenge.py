@@ -40,7 +40,8 @@ for i in range(word_stack.size()):
 
 print(reverse_word)
 
-"""2. Use a stack to create a new list with the following reversed: [1, 2, 3, 4, 5].
+"""2. Use a stack to create a new list with the following reversed:
+    [1, 2, 3, 4, 5].
 """
 my_list = [1, 2, 3, 4, 5]
 my_list_stack = Stack()

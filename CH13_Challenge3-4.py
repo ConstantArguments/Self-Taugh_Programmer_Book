@@ -1,6 +1,7 @@
-"""3. Create a class called Shape. Define a method in it called what_am_i that prints
-    "I am a shape" when called. Change your Square and Rectangle classes from the previous
-    challenges to inherit from Shape, create Square and Rectangle objects, and call the new
+"""3. Create a class called Shape. Define a method in it called
+    what_am_i that prints "I am a shape" when called. Change your Square
+    and Rectangle classes from the previous challenges to inherit from
+    Shape, create Square and Rectangle objects, and call the new
     method on both of them.
 """
 class Shape:

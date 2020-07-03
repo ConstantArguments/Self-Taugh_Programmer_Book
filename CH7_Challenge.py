@@ -1,8 +1,14 @@
 """1. Print each item in the following list:
-    ["The Walking Dead", "Entourage", "The Sopranos", "The Vampire Diaries"].
+    [
+    "The Walking Dead", "Entourage",
+    "The Sopranos", "The Vampire Diaries"
+    ].
 """
 
-mylist = ["The Walking Dead", "Entourage", "The Sopranos", "The Vampire Diaries"]
+mylist = [
+    "The Walking Dead", "Entourage",
+    "The Sopranos", "The Vampire Diaries"
+    ]
 for shows in mylist:
     print(shows)
 
@@ -12,7 +18,8 @@ for shows in mylist:
 for i in range (25, 51):
     print(i)
 
-"""3. Print each item in the list from the first challenge and their indexes.
+"""3. Print each item in the list from the first challenge and their
+    indexes.
 """
 
 i = 0
@@ -20,9 +27,10 @@ for shows in mylist:
     print(f"Index for {shows} is [{i}].")
     i += 1
 
-"""4. Write a program with an infinite loop (with the option to type q to quit)
-    and a list of numbers. Each time through the loop ask the user to guess a
-    number on the list and tell them whether or not they guessed correctly.
+"""4. Write a program with an infinite loop (with the option to type q
+    to quit) and a list of numbers. Each time through the loop ask the
+    user to guess a number on the list and tell them whether or not they
+    guessed correctly.
 """
 
 import random
@@ -36,7 +44,9 @@ list.sort()
 # print(list)
 
 while True:
-    guess = input('\n\nType "q" to QUIT, or... Guess a number between 1 and 100: ')
+    guess = input(
+        "\n\nType \"q\" to QUIT, or... Guess a number between 1 and 100: "
+        )
     try:
         if guess == "q":
             print("\n\nQ U I T T E R !!!! :(")
@@ -52,8 +62,9 @@ while True:
     except:
         continue
 
-"""5. Multiply all the numbers in the list [8, 19, 148, 4] with all the numbers
-    in the list [9, 1, 33, 83], and append each result to a third list.
+"""5. Multiply all the numbers in the list [8, 19, 148, 4] with all the
+    numbers in the list [9, 1, 33, 83], and append each result to a
+    third list.
 """
 list1 = [8, 19, 148, 4]
 list2 = [9, 1, 33, 83]

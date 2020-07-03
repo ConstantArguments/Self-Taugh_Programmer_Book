@@ -9,5 +9,5 @@ while True:
     a = input(questions[n])
     if a == "q":
         break
-    n = (n + 1) % 5 # any number divided by a larger number will % the smaller number
-
+    # any number divided by a larger number will % the smaller number
+    n = (n + 1) % 5

@@ -70,8 +70,9 @@ def mult_by_four(x):
     result = x * 4
     return result
 
-"""5. Write a function that converts a string to a float and returns the result.
-    Use exception handling to catch the exception that could occur.
+"""5. Write a function that converts a string to a float and returns the
+    result. Use exception handling to catch the exception that could
+    occur.
 """
 
 def string_to_float(x):
@@ -96,4 +97,5 @@ print(mult_by_four(x))
 
 print(string_to_float(8))
 
-# 6. Add a docstring to all of the functions you wrote in challenges 1–5.
+"""6. Add a docstring to all of the functions you wrote in challenges.
+"""

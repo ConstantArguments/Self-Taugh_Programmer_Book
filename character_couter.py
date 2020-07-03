@@ -18,4 +18,13 @@ def count_characters(string):
     print(sorted_items)
 
 count_characters("Supercalifragilisticexpialidocious")
-count_characters("Cras in libero euismod, pellentesque lorem ac, finibus leo. Donec eget lectus orci. Cras est odio, viverra vel placerat at, faucibus sed est. Integer dapibus dignissim elit eu placerat. Donec vehicula urna ut enim ultrices sodales. Aliquam non mi scelerisque, vulputate lacus sed, porttitor odio. In aliquet, quam vitae finibus posuere, turpis nisi bibendum eros, eu tincidunt leo nulla ut tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget consequat augue. Donec sit.")
+count_characters(
+    "Cras in libero euismod, pellentesque lorem ac, finibus leo. Donec eget"
+    " lectus orci. Cras est odio, viverra vel placerat at, faucibus sed est."
+    " Integer dapibus dignissim elit eu placerat. Donec vehicula urna ut enim"
+    " ultrices sodales. Aliquam non mi scelerisque, vulputate lacus sed,"
+    " porttitor odio. In aliquet, quam vitae finibus posuere, turpis nisi"
+    " bibendum eros, eu tincidunt leo nulla ut tortor. Lorem ipsum dolor sit"
+    " amet, consectetur adipiscing elit. Donec eget consequat augue. Donec"
+    " sit."
+    )

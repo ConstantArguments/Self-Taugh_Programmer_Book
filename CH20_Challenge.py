@@ -8,8 +8,8 @@ class Scraper:
         self.site = site
     def scrape(self):
         """
-        Makes a request to a website and returns a Response object that has its HTML stored in it,
-        along with additional data.
+        Makes a request to a website and returns a Response object that
+        has its HTML stored in it,along with additional data.
         The function r.read() returns the HTML from the Response object.
         All of the HTML from the website is in the variable html.
         BeautifulSoup parses the HTML.
@@ -38,5 +38,9 @@ class Scraper:
 
 # news = "https://www.news.yahoo.com"
 news = "https://news.ycombinator.com"
-# news = "https://news.google.com" # Google now uses a non-human-readable link-to-external-link. This scraper no longer produces useful results for news.google.com.
+
+"""Google now uses a non-human-readable link-to-external-link.
+This scraper no longer produces useful results for news.google.com.
+"""
+# news = "https://news.google.com"
 Scraper(news).scrape()

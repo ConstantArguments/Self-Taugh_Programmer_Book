@@ -5,7 +5,8 @@ def palindrome(word):
     """
     word = word.lower()
     word = word.replace(" ", "")
-    return word[::-1] == word #[::-1] is syntax for returning a slice of an entire iterable in reverse.
+    #[::-1] is syntax for returning a slice of an entire iterable in reverse.
+    return word[::-1] == word
 
 print(palindrome("Hamster"))
 print(palindrome("Mom"))

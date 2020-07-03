@@ -11,7 +11,8 @@ def is_anagram(word1, word2):
 
 def sort(word):
     """
-    Takes string and converts to lowercase, strips all whitespace, and sorts alphabetically.
+    Takes string and converts to lowercase, strips all whitespace, and
+    sorts alphabetically.
     Returns modified string.
     :param: word
     """

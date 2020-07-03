@@ -1,6 +1,7 @@
-"""2. Change the Square class so that when you print a Square object, a message prints
-    telling you the len of each of the four sides of the shape. For example, if you create
-    a square with Square(29) and print it, Python should print 29 by 29 by 29 by 29.
+"""2. Change the Square class so that when you print a Square object, a
+    message prints telling you the len of each of the four sides of the
+    shape. For example, if you create a square with Square(29) and print
+    it, Python should print 29 by 29 by 29 by 29.
 """
 
 class Square:
@@ -11,7 +12,10 @@ class Square:
         self.square_list.append(self) # appends list with objects
         print(f"{self} created!")
     def __repr__(self):
-        return f"{self.length} by {self.width} by {self.length} by {self.width}"
+        return (
+            f"{self.length} by {self.width}"
+            f" by {self.length} by {self.width}"
+            )
 
 
 square1 = Square(2, 2)

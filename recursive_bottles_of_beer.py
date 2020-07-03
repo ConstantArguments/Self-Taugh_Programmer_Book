@@ -18,7 +18,11 @@ def bottles_of_beer(bob):
         sbob = ""
     if bob == 0:
         bob = "no more"
-    print(f"{tmp} bottle{stmp} of beer on the wall. {tmp} bottle{stmp} of beer. Take one down, pass it around, {bob} bottle{sbob} of beer on the wall.")
+    print(
+        f"{tmp} bottle{stmp} of beer on the wall."
+        f" {tmp} bottle{stmp} of beer. Take one down, pass it around,"
+        f" {bob} bottle{sbob} of beer on the wall."
+        )
     bottles_of_beer(bob)
 
 bottles_of_beer(99)

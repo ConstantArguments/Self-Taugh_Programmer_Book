@@ -1,9 +1,10 @@
-"""1. Create Rectangle and Square classes with a method called calculate_perimeter that
-    calculates the perimeter of the shapes they represent. Create Rectangle and Square
-    objects and call the method on both of them.
-   2. Define a method in your Square class called change_size that allows you to pass in
-    a number that increases or decreases (if the number is negative) each side of a Square
-    object by that number.
+"""1. Create Rectangle and Square classes with a method called
+    calculate_perimeter that calculates the perimeter of the shapes they
+    represent. Create Rectangle and Square objects and call the method
+    on both of them.
+   2. Define a method in your Square class called change_size that
+    allows you to pass in a number that increases or decreases (if the
+    number is negative) each side of a Square object by that number.
 """
 
 class Rectangle:

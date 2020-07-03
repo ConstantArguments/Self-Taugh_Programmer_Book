@@ -1,17 +1,29 @@
 """
 A Game of "War". 2 Players.
-Each Player is dealt a card. The Player with the highest rank of Card wins the round.
-Cards are ranked by face number value, "Jack", "Queen", "King", and then "Ace" is highest.
+Each Player is dealt a card. The Player with the highest rank of Card
+wins the round.
+Cards are ranked by face number value, "Jack", "Queen", "King", and then
+"Ace" is highest.
 In the event of a tie the card suit value breaks the tie.
 Suits are ranked alphabetically with "Spades" as the highest.
-When all 52 cards are dealt, the Player with the most rounds won, wins "War".
+When all 52 cards are dealt, the Player with the most rounds won, wins
+"War".
 """
 
 from random import shuffle
 
 class Card:
+    """
+    Creates Card Object.
+    Defines methods for comparing this Card Object to Other Card Object.
+    """
     suits = ["clubs", "diamonds", "hearts", "spades"]
-    values = [None, None, "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"] # "None" in index 0 and 1 to align values to index.
+    values = [
+        None, None, # "None" in index 0 and 1 to align values to index.
+        "2", "3", "4", "5",
+        "6", "7", "8", "9", "10",
+        "Jack", "Queen", "King", "Ace"
+        ]
     def __init__(self, v, s):
         """
         Value and Suit.
@@ -22,7 +34,9 @@ class Card:
         self.suit = s
     def __lt__(self, c2):
         """
-        Compares two Card and determines which is less than (lt) based on value then suit.
+        Compares two Card and determines which is less than (lt) based
+        on value then suit.
+        param c2: Card Object
         """
         if self.value > c2.value:
             return True
@@ -34,7 +48,9 @@ class Card:
         return False
     def __gt__(self, c2):
         """
-        Compares two Card and determines which is greater than (gt) based on value then suit.
+        Compares two Card and determines which is greater than (gt)
+        based on value then suit.
+        param c2: Card Object
         """
         if self.value > c2.value:
             return True
@@ -111,9 +127,12 @@ class Game:
         """
         d = f"\n{p1n} drew {p1c}\n{p2n} drew {p2c}\n"
         print(d)
+
     def play_game(self):
         """
-        Starts Game.
+        Plays Game.
+        Prints winner.
+        Prints rounds won by each player.
         """
         cards = self.deck.cards
         print("Beginning War!")
@@ -133,7 +152,9 @@ class Game:
                 self.p2.wins += 1
                 self.wins(self.p2.name)
         win = self.winner(self.p1, self.p2)
-        print(f"\nWar is over. {win} wins!")
+        print(f"\n!!!War is over. {win} wins!!!")
+        print(f"{self.p1.name} won {self.p1.wins}.")
+        print(f"{self.p2.name} won {self.p2.wins}.")
     def winner(self, p1, p2):
         """
         Determines winner based on wins tracked in Player.
@@ -147,10 +168,16 @@ class Game:
         return "Tie! Nobody"
 
 def play_war():
+    """
+    Starts game of war.
+    """
     game = Game()
     game.play_game()
 
 def show_deck():
+    """
+    Print each Card in Deck.
+    """
     deck = Deck()
     for card in deck.cards:
         print(card)

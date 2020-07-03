@@ -1,5 +1,5 @@
-"""1. Define a class called Apple with four instance variables that represent four
-    attributes of an apple.
+"""1. Define a class called Apple with four instance variables that
+    represent four attributes of an apple.
 """
 
 class Apple:
@@ -13,9 +13,10 @@ class Apple:
 apple1 = Apple(6, "red mottled", True, 10)
 apple2 = Apple(7.3, "green", False, 3)
 
-"""2. Create a Circle class with a method called area that calculates and returns its area.
-    Then create a Circle object, call area on it, and print the result. Use Python's pi
-    function in the built-in math module.
+"""2. Create a Circle class with a method called area that calculates
+    and returns its area. Then create a Circle object, call area on it,
+    and print the result. Use Python's pi function in the built-in math
+    module.
 """
 import math # normally imports at top of file
 
@@ -33,8 +34,9 @@ circle2 = Circle(17)
 print(circle1.area())
 print(circle2.area())
 
-"""3. Create a Triangle class with a method called area that calculates and returns its area.
-    Then create a Triangle object, call area on it, and print the result.
+"""3. Create a Triangle class with a method called area that calculates
+    and returns its area. Then create a Triangle object, call area on
+    it, and print the result.
 """
 
 class Triangle:
@@ -52,9 +54,9 @@ triangle2 = Triangle(11, 5)
 print(triangle1.area())
 print(triangle2.area())
 
-"""4. Make a Hexagon class with a method called calculate_perimeter that calculates and
-    returns its perimeter. Then create a Hexagon object, call calculate_perimeter on it, and
-    print the result.
+"""4. Make a Hexagon class with a method called calculate_perimeter that
+    calculates and returns its perimeter. Then create a Hexagon object,
+    call calculate_perimeter on it, and print the result.
 """
 
 class Hexagon:
@@ -68,7 +70,14 @@ class Hexagon:
         print(f"{self} Created!")
 
     def perimeter(self):
-        result = self.side1 + self.side2 + self.side3 +self.side4 + self.side5 + self.side6
+        result = (
+            self.side1 +
+            self.side2 +
+            self.side3 +
+            self.side4 +
+            self.side5 +
+            self.side6
+            )
         return result
 
 hexagon1 = Hexagon(2, 4, 6, 4, 3, 1)

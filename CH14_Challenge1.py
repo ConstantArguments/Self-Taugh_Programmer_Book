@@ -1,5 +1,6 @@
-"""1. Add a square_list class variable to a class called Square so that every time you create
-    a new Square object, the new object gets added to the list.
+"""1. Add a square_list class variable to a class called Square so that
+    every time you create a new Square object, the new object gets added
+    to the list.
 """
 
 class Square:

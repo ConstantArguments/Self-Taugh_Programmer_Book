@@ -20,6 +20,11 @@ numbers = range(0, 100)
 search2 = seq_search(numbers, 200) #200 is not in numbers
 print(search2)
 
-words = ["able", "about", "above", "accept", "according", "account", "across", "act", "action", "activity", "actually", "add", "address", "administration", "admit", "adult", "affect", "after", "again", "against", "age", "agency"]
+words = [
+    "able", "about", "above", "accept", "according", "account", "across",
+    "act", "action", "activity", "actually", "add", "address",
+    "administration", "admit", "adult", "affect", "after", "again", "against",
+    "age", "agency"
+    ]
 search3 = seq_search(words, "across")
 print(search3)
